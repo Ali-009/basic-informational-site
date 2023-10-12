@@ -1,0 +1,8 @@
+header > nav > ul > li > a[href="/about"]{
+    color: var(--accent-color)
+}
+
+.about-page-container > p{
+    max-width: 85%;
+    margin-top: 7.5%;
+}

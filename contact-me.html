@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Art Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/secondary-page-base.css">
+    <link rel="stylesheet" href="./styles/contact-me.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-me-container">
+            <img src="./assets/robot-contact-me.jpeg" alt="Robot Wearing a Hoodie Typing On A Computer">
+            <h1>Get In Touch</h1>
+            <form action="#">
+                <label for="user-full-name">
+                    Full Name
+                </label>
+                <input type="text" id="user-full-name">
+                <label for="user-email">
+                    Email
+                </label>
+                <input type="email" id="user-email">
+                <label for="subject">
+                    Subject
+                </label>
+                <input type="text" id="subject">
+                <label for="">
+                    Your Message
+                </label>
+                <textarea name="" id="">
+                </textarea>
+            <button class="submit-button">
+                Submit 
+            </button>
+            </form>
+        </div>
+    </main>
+    <script>
+        document.querySelector('.submit-button').addEventListener('click', (e) => e.preventDefault())
+    </script>
+</body>

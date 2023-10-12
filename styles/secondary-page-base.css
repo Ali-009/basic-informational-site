@@ -1,0 +1,16 @@
+/* This stylesheet ensures consistency between the About Me and Contact Me pages */
+main{
+    margin-top: 0px;
+}
+
+main > div{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 100%;
+    text-align: justify;
+}
+
+main > div > img{
+    max-width: 100%;
+}
