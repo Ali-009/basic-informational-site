@@ -4,11 +4,53 @@ header > nav > ul > li > a[href="/contact-me"]{
 
 h1{
     margin: 32px 0px 48px 0px ;
+    color: white;
 }
 
 form{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-flow: column nowrap;
     row-gap: 16px;
     column-gap: 32px;
+    width: 288px;
+}
+
+label{
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+.text-input{
+    width: 288px;
+}
+
+input{
+    height: 48px;
+}
+
+textarea{
+    font-family: 'PT Sans';
+    resize: none;
+}
+
+input, textarea{
+    appearance: none;
+    background: white;
+    outline: none;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+input:focus, textarea:focus{
+    border-color: var(--accent-color);
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 14px;
+    font-style: italic;
 }
