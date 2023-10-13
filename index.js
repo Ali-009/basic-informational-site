@@ -34,12 +34,23 @@ const server = http.createServer(function(req, res){
         //Sending files requested by a webpage
         //Note that Content-Type need not be specified for files requested by an HTML
         fs.readFile('.' + requestPath, function(err, data){
-            res.write(data)
+            data ? res.write(data) : null
             res.end()
         })
     } else {
         res.writeHead(404, {'Content-Type' : 'text/html'})
-        res.end('404 Page Not Found!')
+        fs.readFile('./page-404.html', function(err, data){
+            if(err) {
+                res.writeHead(500, {'Content-Type' : 'text/html'})
+                res.end('Failed To Deliver The Page')
+            }
+            //The header needs to be sent only once when the website is first visited
+            if(!res.headersSent){
+                res.writeHead(404, {'Content-Type': 'text/html'})
+            }
+            res.write(data)
+            res.end()
+        })
     }
 })
 
