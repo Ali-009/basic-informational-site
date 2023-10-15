@@ -1,8 +1,18 @@
-.page-404-container > p{
+.page-404-container > .page-404-text{
     max-width: 85%;
     margin-top: 7.5%;
 }
 
 h1{
     margin-top: 64px;
+}
+
+@media (min-width: 768px){
+    .page-404-container{
+        background-color: var(--primary-color-2);
+    }
+    h1{
+        margin: 0px;
+        letter-spacing: 1px;
+    }
 }

@@ -20,7 +20,7 @@ main > div > img{
         margin: 64px 0px;
     }
     main > div{
-        /*Centering the div inside main vertically inside a flexbox*/
+        /*Centering the div vertically inside main, which is a flexbox*/
         margin: auto 0;
         height: min-content;
         flex-flow: row nowrap;
@@ -36,5 +36,11 @@ main > div > img{
 }
 
 @media (min-width: 1200px){
+    main > div > img{
+        width: 512px;
+    }
+    main > div > :nth-child(2){
+        padding: 0px 64px 0px 64px;
+    }
 
 }

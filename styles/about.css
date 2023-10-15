@@ -2,7 +2,7 @@ header > nav > ul > li > a[href="/about"]{
     color: var(--accent-color)
 }
 
-.about-page-container > p{
+.about-page-container > .about-text{
     max-width: 85%;
     margin-top: 7.5%;
 }
@@ -28,5 +28,11 @@ header > nav > ul > li > a[href="/about"]{
 }
 
 @media (min-width: 1200px){
+    .about-page-container > .about-text{
+        max-width: 60ch;
+    }
+    .about-text > h1{
+        margin: 0px 0px 32px 0px
+    }
 
 }
