@@ -14,6 +14,12 @@ main{
     gap: 48px;
 }
 
+.gallery-container > figure,
+.gallery-container > figure > img,
+.gallery-container > figure > figcaption{
+    width: 288px;
+}
+
 .gallery-container > figure{
     display: flex;
     flex-flow: column nowrap;
@@ -25,11 +31,9 @@ main{
 
 .gallery-container > figure > img{
     border-radius: 12px 12px 0px 0px;
-    width: 288px;
 }
 
 .gallery-container > figure > figcaption{
-    width: 288px;
     margin: auto 0;
     text-align: center;
     box-sizing: border-box;
@@ -46,18 +50,23 @@ main{
         grid-template-columns: repeat(3, auto);
         gap: 48px;
     }
-    .gallery-container > figure{
-        width: 250px;
-    }
-    .gallery-container > figure > img{
-        width: 250px;
-    }
+    .gallery-container > figure,
+    .gallery-container > figure > img,
     .gallery-container > figure > figcaption{
-        width: 250px;
-        text-align: start;
+        width: 200px;
     }
 }
 
 @media (min-width: 1200px){
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 64px;
+    }
+    .gallery-container > figure,
+    .gallery-container > figure > img,
+    .gallery-container > figure > figcaption{
+        width: 250px;
+    }
 
 }
