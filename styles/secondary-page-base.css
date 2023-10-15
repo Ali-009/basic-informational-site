@@ -14,3 +14,27 @@ main > div{
 main > div > img{
     max-width: 100%;
 }
+
+@media (min-width: 768px){
+    main{
+        margin: 64px 0px;
+    }
+    main > div{
+        /*Centering the div inside main vertically inside a flexbox*/
+        margin: auto 0;
+        height: min-content;
+        flex-flow: row nowrap;
+        border-radius: 12px;
+    }
+    main > div > img{
+        width: 323px;
+        border-radius: 12px 0px 0px 12px;
+    }
+    main > div > :nth-child(2){
+        padding: 0px 32px 0px 32px;
+    }
+}
+
+@media (min-width: 1200px){
+
+}

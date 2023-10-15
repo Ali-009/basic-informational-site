@@ -6,3 +6,27 @@ header > nav > ul > li > a[href="/about"]{
     max-width: 85%;
     margin-top: 7.5%;
 }
+
+.about-text{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+    .about-page-container{
+        background-color: var(--primary-color-2);
+    }
+    .about-page-container > .about-text{
+        max-width: 45ch;
+        margin-top: 0px;
+        color: white;
+    }
+    .about-text > h1{
+        margin: 0px 0px 16px 0px;
+    }
+}
+
+@media (min-width: 1200px){
+
+}
