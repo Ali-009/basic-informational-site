@@ -10,8 +10,7 @@ h1{
 form{
     display: flex;
     flex-flow: column nowrap;
-    row-gap: 16px;
-    column-gap: 32px;
+    gap:  16px;
     width: 288px;
 }
 
@@ -34,11 +33,34 @@ textarea{
     resize: none;
 }
 
+.submit-button{
+    /*19px is the height of input labels in this page. Adding this as margin-top to the button helps make the page look more consistent*/
+    appearance: none;
+    box-sizing: border-box;
+    align-self: center;
+    
+    background-color: var(--accent-color);
+    box-shadow: -4px 4px var(--accent-shade);
+    border: none;
+    border-radius: 3px;
+    
+    color: var(--primary-color-2);
+    font-size: 18px;
+    width: 276px;
+    margin-top: 19px;
+    height: 48px;
+}
+
+.submit-button:active{
+    transform: translate(-4px, 4px);
+    box-shadow: none;
+}
+
 input, textarea{
     appearance: none;
     background: white;
     outline: none;
-    border: 3px solid transparent;
+    border: none;
     border-radius: 3px;
     width: 100%;
     box-sizing: border-box;
@@ -46,8 +68,15 @@ input, textarea{
     padding-left: 8px;
 }
 
+textarea{
+    resize: none;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 input:focus, textarea:focus{
-    border-color: var(--accent-color);
+    border: 3px solid var(--accent-color);
 }
 
 input::placeholder, textarea::placeholder{
