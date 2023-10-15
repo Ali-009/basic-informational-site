@@ -44,7 +44,7 @@ main{
     color: var(--accent-color)
 }
 
-@media (min-width: 768px){
+@media (min-width: 800px){
     .gallery-container{
         display: grid;
         grid-template-columns: repeat(3, auto);

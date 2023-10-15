@@ -80,3 +80,25 @@ input::placeholder, textarea::placeholder{
     font-size: 14px;
     font-style: italic;
 }
+
+@media (min-width: 800px){
+    form, .text-input{
+        width: 384px;
+    }
+    .submit-button{
+        width: 338px
+    }
+    h1{
+        margin: 20px 0px 32px 0px ;
+        color: white;
+    }
+    main > div > :nth-child(2){
+        padding: 0px 0px 0px 48px;
+    }
+}
+
+@media (min-width: 1200px){
+    main > div > :nth-child(2){
+        padding: 0px 0px 0px 92px;
+    }
+}

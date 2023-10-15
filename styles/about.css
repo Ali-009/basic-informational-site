@@ -13,7 +13,7 @@ header > nav > ul > li > a[href="/about"]{
     justify-content: center;
 }
 
-@media (min-width: 768px){
+@media (min-width: 800px){
     .about-page-container{
         background-color: var(--primary-color-2);
     }

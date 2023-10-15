@@ -7,7 +7,7 @@ h1{
     margin-top: 64px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 800px){
     .page-404-container{
         background-color: var(--primary-color-2);
     }
