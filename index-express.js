@@ -1,3 +1,4 @@
+//This server code no longer works after restructuring the application
 const express = require('express')
 const path = require('path')
 const app = express()

@@ -1,3 +1,4 @@
+//This server code no longer works after restructing the project
 const http = require('http')
 const fs = require('fs')
 const path = require('path')
